@@ -1,0 +1,44 @@
+Enlever le nom de l'appli :
+
+android:theme="@android:style/Theme.NoTitleBar"
+
+Crash de l'application
+
+
+
+Récuparation du JSON : erreur
+
+06-05 22:32:49.995 17584-17584/com.example.rmy.earthquake E/AndroidRuntime: FATAL EXCEPTION: main
+                                                                            Process: com.example.rmy.earthquake, PID: 17584
+                                                                            java.lang.RuntimeException: Unable to start activity ComponentInfo{com.example.rmy.earthquake/com.example.rmy.earthquake.MainActivity}: java.lang.NullPointerException
+                                                                                at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2374)
+                                                                                at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2426)
+                                                                                at android.app.ActivityThread.access$800(ActivityThread.java:151)
+                                                                                at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1342)
+                                                                                at android.os.Handler.dispatchMessage(Handler.java:110)
+                                                                                at android.os.Looper.loop(Looper.java:193)
+                                                                                at android.app.ActivityThread.main(ActivityThread.java:5329)
+                                                                                at java.lang.reflect.Method.invokeNative(Native Method)
+                                                                                at java.lang.reflect.Method.invoke(Method.java:515)
+                                                                                at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:828)
+                                                                                at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:644)
+                                                                                at dalvik.system.NativeStart.main(Native Method)
+                                                                             Caused by: java.lang.NullPointerException
+                                                                                at com.example.rmy.earthquake.TestAsyncTask.onPreExecute(TestAsyncTask.java:32)
+                                                                                at android.os.AsyncTask.executeOnExecutor(AsyncTask.java:587)
+                                                                                at android.os.AsyncTask.execute(AsyncTask.java:535)
+                                                                                at com.example.rmy.earthquake.MainActivity.onCreate(MainActivity.java:31)
+                                                                                at android.app.Activity.performCreate(Activity.java:5342)
+                                                                                at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1088)
+                                                                                at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2328)
+                                                                                at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2426) 
+                                                                                at android.app.ActivityThread.access$800(ActivityThread.java:151) 
+                                                                                at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1342) 
+                                                                                at android.os.Handler.dispatchMessage(Handler.java:110) 
+                                                                                at android.os.Looper.loop(Looper.java:193) 
+                                                                                at android.app.ActivityThread.main(ActivityThread.java:5329) 
+                                                                                at java.lang.reflect.Method.invokeNative(Native Method) 
+                                                                                at java.lang.reflect.Method.invoke(Method.java:515) 
+                                                                                at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:828) 
+                                                                                at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:644) 
+                                                                                at dalvik.system.NativeStart.main(Native Method) 
